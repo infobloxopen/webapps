@@ -25,7 +25,7 @@ import CatchError from 'teleport/components/CatchError';
 import Authenticated from 'teleport/components/Authenticated';
 import Main from './Main';
 import Invite, { ResetPassword } from './Invite';
-import Login, { LoginSuccess, LoginFailed } from './Login';
+import Login, { LoginSuccess, LoginFailed, LoginLimit } from './Login';
 import AppLauncher from './AppLauncher';
 import Console from './Console';
 import Player from './Player';
@@ -42,6 +42,11 @@ const Teleport: React.FC<Props> = ({ ctx, history, children }) => {
       <ThemeProvider>
         <Router history={history}>
           <Switch>
+            <Route
+              title="Deep Link Login Failed"
+              path={cfg.routes.loginErrorConnLimit}
+              component={LoginLimit}
+            />
             <Route
               title="Login Failed"
               path={cfg.routes.loginError}

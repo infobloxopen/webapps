@@ -66,6 +66,7 @@ const cfg = {
     loginErrorLegacy: '/web/msg/error/login_failed',
     loginError: '/web/msg/error/login',
     loginErrorCallback: '/web/msg/error/login/callback',
+    loginErrorConnLimit: '/web/msg/error/limit',
     userInvite: '/web/invite/:tokenId',
     userReset: '/web/reset/:tokenId',
     // whitelist sso handlers

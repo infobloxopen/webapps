@@ -103,6 +103,20 @@ export const LoginFailed = ({ message, loginUrl }) => (
   </CardError>
 );
 
+export const LoginLimit = ({ message, loginUrl }) => (
+  <CardError>
+    <Header>DeepLink Login Unsuccessful</Header>
+    <Content
+      message={message}
+      desc={
+        <Text typography="paragraph" textAlign="center">
+          <HyperLink href={loginUrl}>Please attempt to log in again</HyperLink>
+        </Text>
+      }
+    />
+  </CardError>
+);
+
 LoginFailed.propTypes = {
   message: PropTypes.string,
   loginUrl: PropTypes.string.isRequired,

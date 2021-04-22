@@ -16,6 +16,7 @@ limitations under the License.
 
 import React from 'react';
 import LoginSuccess from './LoginSuccess';
+import { LoginLimit } from './LoginLimit';
 import { LoginFailed } from './LoginFailed';
 import { Login } from './Login';
 
@@ -25,6 +26,7 @@ export default {
 
 export const Form = () => <Login {...sample} />;
 export const Success = () => <LoginSuccess />;
+export const FailedLimit = () => <LoginLimit />;
 export const FailedDefault = () => <LoginFailed />;
 export const FailedCustom = () => <LoginFailed message="custom message" />;
 

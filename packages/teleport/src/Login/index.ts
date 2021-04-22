@@ -15,11 +15,13 @@ limitations under the License.
 */
 
 import Login from './Login';
+import LoginLimit from './LoginLimit';
 import LoginFailed from './LoginFailed';
 import LoginSuccess from './LoginSuccess';
 
 export default Login;
 export {
+  LoginLimit,
   LoginFailed,
   LoginSuccess
 }

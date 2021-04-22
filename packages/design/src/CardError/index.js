@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 import CardError, {
+  LoginLimit,
   Failed,
   Offline,
   LoginFailed,
@@ -23,4 +24,4 @@ import CardError, {
 } from './CardError';
 
 export default CardError;
-export { Failed, LoginFailed, AccessDenied, NotFound, Offline };
+export { LoginLimit, Failed, LoginFailed,  AccessDenied, NotFound, Offline };
